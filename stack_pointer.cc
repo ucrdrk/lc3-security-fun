@@ -20,8 +20,10 @@ int *return_heap_ptr(int val) {
 int main (int argc, char *argv[]) {
     int *int_heap = return_heap_ptr(9);
     std::cout << *int_heap << std::endl;
+
     int *int_ptr = return_stack_ptr(10);
     std::cout << int_ptr << std::endl;
     std::cout << &return_stack_ref(11) << std::endl;
+    
     return EXIT_SUCCESS;
 }
